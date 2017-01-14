@@ -53,7 +53,11 @@ ul.tab li a:focus, .active {
 
 
 <div id="Dump1" class="tabcontent">
-<p><samp><pre></pre></samp></p>
+<p><samp><pre>0000  20 1a 06 92 a8 eb 0e 5d 4e 97 f6 a0 08 00 45 20
+0010  00 28 7e 5e 40 00 39 06 bf 8a 3e 8c f7 6c c0 a8
+0020  0d 26 01 bb 38 fa a6 33 10 e1 2c 3e d5 2e 50 10
+0030  04 02 b4 d4 00 00 00 00 00 00 00 00
+</pre></samp></p>
 </div>
 
 
@@ -61,7 +65,89 @@ ul.tab li a:focus, .active {
 
 <div id="Content1" class="tabcontent">
 	<p>
-	<pre>
+	<pre>Frame 9740: 60 bytes on wire (480 bits), 60 bytes captured (480 bits) on interface 0
+    Interface id: 0 (\Device\NPF_{8E52706C-F47D-4483-BE6F-AEC795E06A6D})
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Jan 14, 2017 12:28:09.760212000 Западная Азия (зима)
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1484378889.760212000 seconds
+    [Time delta from previous captured frame: 0.007227000 seconds]
+    [Time delta from previous displayed frame: 0.007227000 seconds]
+    [Time since reference or first frame: 59.690445000 seconds]
+    Frame Number: 9740
+    Frame Length: 60 bytes (480 bits)
+    Capture Length: 60 bytes (480 bits)
+    [Frame is marked: True]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:tcp]
+    [Coloring Rule Name: TCP]
+    [Coloring Rule String: tcp]
+Ethernet II, Src: 0e:5d:4e:97:f6:a0 (0e:5d:4e:97:f6:a0), Dst: CompalIn_92:a8:eb (20:1a:06:92:a8:eb)
+    Destination: CompalIn_92:a8:eb (20:1a:06:92:a8:eb)
+        Address: CompalIn_92:a8:eb (20:1a:06:92:a8:eb)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 0e:5d:4e:97:f6:a0 (0e:5d:4e:97:f6:a0)
+        Address: 0e:5d:4e:97:f6:a0 (0e:5d:4e:97:f6:a0)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IP (0x0800)
+    Padding: 000000000000
+Internet Protocol Version 4, Src: 62.140.247.108 (62.140.247.108), Dst: 192.168.13.38 (192.168.13.38)
+    Version: 4
+    Header Length: 20 bytes
+    Differentiated Services Field: 0x20 (DSCP 0x08: Class Selector 1; ECN: 0x00: Not-ECT (Not ECN-Capable Transport))
+        0010 00.. = Differentiated Services Codepoint: Class Selector 1 (0x08)
+        .... ..00 = Explicit Congestion Notification: Not-ECT (Not ECN-Capable Transport) (0x00)
+    Total Length: 40
+    Identification: 0x7e5e (32350)
+    Flags: 0x02 (Don't Fragment)
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 57
+    Protocol: TCP (6)
+    Header checksum: 0xbf8a [validation disabled]
+        [Good: False]
+        [Bad: False]
+    Source: 62.140.247.108 (62.140.247.108)
+    Destination: 192.168.13.38 (192.168.13.38)
+    [Source GeoIP: Unknown]
+    [Destination GeoIP: Unknown]
+Transmission Control Protocol, Src Port: 443 (443), Dst Port: 14586 (14586), Seq: 6536, Ack: 1289, Len: 0
+    Source Port: 443 (443)
+    Destination Port: 14586 (14586)
+    [Stream index: 217]
+    [TCP Segment Len: 0]
+    Sequence number: 6536    (relative sequence number)
+    Acknowledgment number: 1289    (relative ack number)
+    Header Length: 20 bytes
+    .... 0000 0001 0000 = Flags: 0x010 (ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 0... = Push: Not set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+    Window size value: 1026
+    [Calculated window size: 65664]
+    [Window size scaling factor: 64]
+    Checksum: 0xb4d4 [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+    Urgent pointer: 0
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 9717]
+        [The RTT to ACK the segment was: 0.028036000 seconds]
+        [iRTT: 0.029246000 seconds]
+
+
+
 </pre>
 	</p> 
 </div>

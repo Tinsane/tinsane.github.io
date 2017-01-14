@@ -10,7 +10,7 @@ def main():
     dump = ''
     content = ''
     for line in lines:
-        if line.startswith('Frame'):
+        if line.startswith('Frame') and line:
             with open('dump%d.html' % fnum, 'w') as f:
                 f.write(template % (dump, content))
             fnum += 1
