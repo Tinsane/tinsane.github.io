@@ -2,7 +2,7 @@ import re
 
 
 def main():
-    fnum = 20
+    fnum = 1
     with open('dumps.txt', 'r') as f:
         lines = f.readlines()
     with open('template.txt', 'r') as f:
