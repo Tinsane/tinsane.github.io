@@ -53,16 +53,62 @@ ul.tab li a:focus, .active {
   <li><a href="javascript:void(0)" class="tablinks" onclick="openElementTab(event, 'Content1')">Разбор</a></li>
 </ul>
 
+<ul class="tab">
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openElementTab(event, 'Dump2')">Дамп</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openElementTab(event, 'Content2')">Разбор</a></li>
+</ul>
+
+<ul class="tab">
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openElementTab(event, 'Dump3')">Дамп</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openElementTab(event, 'Content3')">Разбор</a></li>
+</ul>
+
+<ul class="tab">
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openElementTab(event, 'Dump4')">Дамп</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openElementTab(event, 'Content4')">Разбор</a></li>
+</ul>
+
 <div id="Dump1" class="tabcontent">
-<p><samp><pre>0000  20 1a 06 92 a8 eb 0e 5d 4e 97 f6 a0 08 00 45 c0    ......]N.....E.
-0010  00 6a f0 db 00 00 40 01 ed 7f c0 a8 0d 01 c0 a8   .j....@.........
-0020  0d 26 03 03 98 c0 00 00 00 00 45 00 00 4e 02 76   .&........E..N.v
-0030  00 00 80 11 9c b1 c0 a8 0d 26 c0 a8 0d 01 00 89   .........&......
-0040  00 89 00 3a 25 ef fe c7 00 00 00 01 00 00 00 00   ...:%...........
-0050  00 00 20 43 4b 41 41 41 41 41 41 41 41 41 41 41   .. CKAAAAAAAAAAA
-0060  41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41   AAAAAAAAAAAAAAAA
-0070  41 41 41 00 00 21 00 01                           AAA..!..</pre></samp></p>
+<p><samp><pre>0000  20 1a 06 92 a8 eb 0e 5d 4e 97 f6 a0 08 00 45 c0    
+0010  00 6a f0 db 00 00 40 01 ed 7f c0 a8 0d 01 c0 a8   
+0020  0d 26 03 03 98 c0 00 00 00 00 45 00 00 4e 02 76   
+0030  00 00 80 11 9c b1 c0 a8 0d 26 c0 a8 0d 01 00 89   
+0040  00 89 00 3a 25 ef fe c7 00 00 00 01 00 00 00 00   
+0050  00 00 20 43 4b 41 41 41 41 41 41 41 41 41 41 41   
+0060  41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41   
+0070  41 41 41 00 00 21 00 01                           </pre></samp></p>
 </div>
+
+<div id="Dump2" class="tabcontent">
+<p><samp><pre>0000  20 1a 06 92 a8 eb 0e 5d 4e 97 f6 a0 08 00 45 40   
+0010  00 3c 15 a1 00 00 36 01 a3 ca 57 f0 a5 57 c0 a8   
+0020  0d 26 00 00 54 fe 00 01 00 5d 61 62 63 64 65 66   
+0030  67 68 69 6a 6b 6c 6d 6e 6f 70 71 72 73 74 75 76   
+0040  77 61 62 63 64 65 66 67 68 69     </pre></samp></p>
+</div>
+
+<div id="Dump3" class="tabcontent">
+<p><samp><pre>0000  0e 5d 4e 97 f6 a0 20 1a 06 92 a8 eb 08 00 45 00   
+0010  00 5c 13 49 00 00 01 01 00 00 c0 a8 0d 26 57 f0   
+0020  a5 57 08 00 f7 9e 00 01 00 60 00 00 00 00 00 00   
+0030  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   
+0040  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   
+0050  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   
+0060  00 00 00 00 00 00 00 00 00 00                      </pre></samp></p>
+</div>
+
+<div id="Dump4" class="tabcontent">
+<p><samp><pre>0000  20 1a 06 92 a8 eb 0e 5d 4e 97 f6 a0 08 00 45 c0   
+0010  00 78 f0 d8 00 00 40 01 ed 74 c0 a8 0d 01 c0 a8   
+0020  0d 26 0b 00 f4 ff 00 00 00 00 45 00 00 5c 13 4a   
+0030  00 00 01 01 db 41 c0 a8 0d 26 57 f0 a5 57 08 00   
+0040  f7 9d 00 01 00 61 00 00 00 00 00 00 00 00 00 00   
+0050  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   
+0060  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   
+0070  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   
+0080  00 00 00 00 00 00                                 </pre></samp></p>
+</div>
+
 
 <div id="Content1" class="tabcontent">
 	<p>
@@ -139,8 +185,250 @@ Internet Control Message Protocol
 	</p> 
 </div>
 
+<div id="Content2" class="tabcontent">
+	<p>
+	<pre>Frame 15328: 74 bytes on wire (592 bits), 74 bytes captured (592 bits) on interface 0
+    Interface id: 0 (\Device\NPF_{8E52706C-F47D-4483-BE6F-AEC795E06A6D})
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Jan 14, 2017 09:29:28.114871000 Западная Азия (зима)
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1484368168.114871000 seconds
+    [Time delta from previous captured frame: 0.038689000 seconds]
+    [Time delta from previous displayed frame: 0.038689000 seconds]
+    [Time since reference or first frame: 709.881645000 seconds]
+    Frame Number: 15328
+    Frame Length: 74 bytes (592 bits)
+    Capture Length: 74 bytes (592 bits)
+    [Frame is marked: True]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:icmp:data]
+    [Coloring Rule Name: ICMP]
+    [Coloring Rule String: icmp || icmpv6]
+Ethernet II, Src: 0e:5d:4e:97:f6:a0 (0e:5d:4e:97:f6:a0), Dst: CompalIn_92:a8:eb (20:1a:06:92:a8:eb)
+    Destination: CompalIn_92:a8:eb (20:1a:06:92:a8:eb)
+        Address: CompalIn_92:a8:eb (20:1a:06:92:a8:eb)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 0e:5d:4e:97:f6:a0 (0e:5d:4e:97:f6:a0)
+        Address: 0e:5d:4e:97:f6:a0 (0e:5d:4e:97:f6:a0)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IP (0x0800)
+Internet Protocol Version 4, Src: 87.240.165.87 (87.240.165.87), Dst: 192.168.13.38 (192.168.13.38)
+    Version: 4
+    Header Length: 20 bytes
+    Differentiated Services Field: 0x40 (DSCP 0x10: Class Selector 2; ECN: 0x00: Not-ECT (Not ECN-Capable Transport))
+        0100 00.. = Differentiated Services Codepoint: Class Selector 2 (0x10)
+        .... ..00 = Explicit Congestion Notification: Not-ECT (Not ECN-Capable Transport) (0x00)
+    Total Length: 60
+    Identification: 0x15a1 (5537)
+    Flags: 0x00
+        0... .... = Reserved bit: Not set
+        .0.. .... = Don't fragment: Not set
+        ..0. .... = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 54
+    Protocol: ICMP (1)
+    Header checksum: 0xa3ca [validation disabled]
+        [Good: False]
+        [Bad: False]
+    Source: 87.240.165.87 (87.240.165.87)
+    Destination: 192.168.13.38 (192.168.13.38)
+    [Source GeoIP: Unknown]
+    [Destination GeoIP: Unknown]
+Internet Control Message Protocol
+    Type: 0 (Echo (ping) reply)
+    Code: 0
+    Checksum: 0x54fe [correct]
+    Identifier (BE): 1 (0x0001)
+    Identifier (LE): 256 (0x0100)
+    Sequence number (BE): 93 (0x005d)
+    Sequence number (LE): 23808 (0x5d00)
+    [Request frame: 15327]
+    [Response time: 38,689 ms]
+    Data (32 bytes)
+        Data: 6162636465666768696a6b6c6d6e6f707172737475767761...
+        [Length: 32]
+
+</pre>
+	</p> 
+</div>
+
+<div id="Content3" class="tabcontent">
+	<p>
+	<pre>Frame 15351: 106 bytes on wire (848 bits), 106 bytes captured (848 bits) on interface 0
+    Interface id: 0 (\Device\NPF_{8E52706C-F47D-4483-BE6F-AEC795E06A6D})
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Jan 14, 2017 09:29:34.517818000 Западная Азия (зима)
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1484368174.517818000 seconds
+    [Time delta from previous captured frame: 2.353563000 seconds]
+    [Time delta from previous displayed frame: 4.371245000 seconds]
+    [Time since reference or first frame: 716.284592000 seconds]
+    Frame Number: 15351
+    Frame Length: 106 bytes (848 bits)
+    Capture Length: 106 bytes (848 bits)
+    [Frame is marked: True]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:icmp:data]
+    [Coloring Rule Name: ICMP]
+    [Coloring Rule String: icmp || icmpv6]
+Ethernet II, Src: CompalIn_92:a8:eb (20:1a:06:92:a8:eb), Dst: 0e:5d:4e:97:f6:a0 (0e:5d:4e:97:f6:a0)
+    Destination: 0e:5d:4e:97:f6:a0 (0e:5d:4e:97:f6:a0)
+        Address: 0e:5d:4e:97:f6:a0 (0e:5d:4e:97:f6:a0)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: CompalIn_92:a8:eb (20:1a:06:92:a8:eb)
+        Address: CompalIn_92:a8:eb (20:1a:06:92:a8:eb)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IP (0x0800)
+Internet Protocol Version 4, Src: 192.168.13.38 (192.168.13.38), Dst: 87.240.165.87 (87.240.165.87)
+    Version: 4
+    Header Length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00: Not-ECT (Not ECN-Capable Transport))
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..00 = Explicit Congestion Notification: Not-ECT (Not ECN-Capable Transport) (0x00)
+    Total Length: 92
+    Identification: 0x1349 (4937)
+    Flags: 0x00
+        0... .... = Reserved bit: Not set
+        .0.. .... = Don't fragment: Not set
+        ..0. .... = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 1
+        [Expert Info (Note/Sequence): "Time To Live" only 1]
+            ["Time To Live" only 1]
+            [Severity level: Note]
+            [Group: Sequence]
+    Protocol: ICMP (1)
+    Header checksum: 0x0000 [validation disabled]
+        [Good: False]
+        [Bad: False]
+    Source: 192.168.13.38 (192.168.13.38)
+    Destination: 87.240.165.87 (87.240.165.87)
+    [Source GeoIP: Unknown]
+    [Destination GeoIP: Unknown]
+Internet Control Message Protocol
+    Type: 8 (Echo (ping) request)
+    Code: 0
+    Checksum: 0xf79e [correct]
+    Identifier (BE): 1 (0x0001)
+    Identifier (LE): 256 (0x0100)
+    Sequence number (BE): 96 (0x0060)
+    Sequence number (LE): 24576 (0x6000)
+    [No response seen]
+        [Expert Info (Warn/Sequence): No response seen to ICMP request in frame 15351]
+            [No response seen to ICMP request in frame 15351]
+            [Severity level: Warn]
+            [Group: Sequence]
+    Data (64 bytes)
+        Data: 000000000000000000000000000000000000000000000000...
+        [Length: 64]
+
+</pre>
+	</p> 
+</div>
+
+<div id="Content4" class="tabcontent">
+	<p>
+	<pre>Frame 15354: 134 bytes on wire (1072 bits), 134 bytes captured (1072 bits) on interface 0
+    Interface id: 0 (\Device\NPF_{8E52706C-F47D-4483-BE6F-AEC795E06A6D})
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Jan 14, 2017 09:29:34.520897000 Западная Азия (зима)
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1484368174.520897000 seconds
+    [Time delta from previous captured frame: 0.000533000 seconds]
+    [Time delta from previous displayed frame: 0.000533000 seconds]
+    [Time since reference or first frame: 716.287671000 seconds]
+    Frame Number: 15354
+    Frame Length: 134 bytes (1072 bits)
+    Capture Length: 134 bytes (1072 bits)
+    [Frame is marked: True]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:icmp:ip:icmp:data]
+    [Coloring Rule Name: ICMP errors]
+    [Coloring Rule String: icmp.type eq 3 || icmp.type eq 4 || icmp.type eq 5 || icmp.type eq 11 || icmpv6.type eq 1 || icmpv6.type eq 2 || icmpv6.type eq 3 || icmpv6.type eq 4]
+Ethernet II, Src: 0e:5d:4e:97:f6:a0 (0e:5d:4e:97:f6:a0), Dst: CompalIn_92:a8:eb (20:1a:06:92:a8:eb)
+    Destination: CompalIn_92:a8:eb (20:1a:06:92:a8:eb)
+        Address: CompalIn_92:a8:eb (20:1a:06:92:a8:eb)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 0e:5d:4e:97:f6:a0 (0e:5d:4e:97:f6:a0)
+        Address: 0e:5d:4e:97:f6:a0 (0e:5d:4e:97:f6:a0)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IP (0x0800)
+Internet Protocol Version 4, Src: 192.168.13.1 (192.168.13.1), Dst: 192.168.13.38 (192.168.13.38)
+    Version: 4
+    Header Length: 20 bytes
+    Differentiated Services Field: 0xc0 (DSCP 0x30: Class Selector 6; ECN: 0x00: Not-ECT (Not ECN-Capable Transport))
+        1100 00.. = Differentiated Services Codepoint: Class Selector 6 (0x30)
+        .... ..00 = Explicit Congestion Notification: Not-ECT (Not ECN-Capable Transport) (0x00)
+    Total Length: 120
+    Identification: 0xf0d8 (61656)
+    Flags: 0x00
+        0... .... = Reserved bit: Not set
+        .0.. .... = Don't fragment: Not set
+        ..0. .... = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: ICMP (1)
+    Header checksum: 0xed74 [validation disabled]
+        [Good: False]
+        [Bad: False]
+    Source: 192.168.13.1 (192.168.13.1)
+    Destination: 192.168.13.38 (192.168.13.38)
+    [Source GeoIP: Unknown]
+    [Destination GeoIP: Unknown]
+Internet Control Message Protocol
+    Type: 11 (Time-to-live exceeded)
+    Code: 0 (Time to live exceeded in transit)
+    Checksum: 0xf4ff [correct]
+    Internet Protocol Version 4, Src: 192.168.13.38 (192.168.13.38), Dst: 87.240.165.87 (87.240.165.87)
+        Version: 4
+        Header Length: 20 bytes
+        Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00: Not-ECT (Not ECN-Capable Transport))
+            0000 00.. = Differentiated Services Codepoint: Default (0x00)
+            .... ..00 = Explicit Congestion Notification: Not-ECT (Not ECN-Capable Transport) (0x00)
+        Total Length: 92
+        Identification: 0x134a (4938)
+        Flags: 0x00
+            0... .... = Reserved bit: Not set
+            .0.. .... = Don't fragment: Not set
+            ..0. .... = More fragments: Not set
+        Fragment offset: 0
+        Time to live: 1
+            [Expert Info (Note/Sequence): "Time To Live" only 1]
+                ["Time To Live" only 1]
+                [Severity level: Note]
+                [Group: Sequence]
+        Protocol: ICMP (1)
+        Header checksum: 0xdb41 [validation disabled]
+            [Good: False]
+            [Bad: False]
+        Source: 192.168.13.38 (192.168.13.38)
+        Destination: 87.240.165.87 (87.240.165.87)
+        [Source GeoIP: Unknown]
+        [Destination GeoIP: Unknown]
+    Internet Control Message Protocol
+        Type: 8 (Echo (ping) request)
+        Code: 0
+        Checksum: 0xf79d
+        Identifier (BE): 1 (0x0001)
+        Identifier (LE): 256 (0x0100)
+        Sequence number (BE): 97 (0x0061)
+        Sequence number (LE): 24832 (0x6100)
+        Data (64 bytes)
+            Data: 000000000000000000000000000000000000000000000000...
+            [Length: 64]
+
+</pre>
+	</p> 
+</div>
+
 <script>
-function openElementTab(evt, cityName) {
+function openElementTab(evt, elementName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
@@ -150,7 +438,7 @@ function openElementTab(evt, cityName) {
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
-    document.getElementById(cityName).style.display = "block";
+    document.getElementById(elementName).style.display = "block";
     evt.currentTarget.className += " active";
 }
 </script>
