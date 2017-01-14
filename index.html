@@ -1,113 +1,38 @@
-<!DOCTYPE html>
 <html>
-<style>
-body {font-family: "Lato", sans-serif;}
+<head>
+<title>JavaScript - Random Link Generator</title>
 
-ul.tab {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
+
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function go_to(url) {
+window.location=url;
 }
-
-/* Float the list items side by side */
-ul.tab li {float: left;}
-
-/* Style the links inside the list items */
-ul.tab li a {
-    display: inline-block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    transition: 0.3s;
-    font-size: 17px;
+function rand_link() {
+var a;
+a = 1+Math.round(Math.random()*24);
+go_to("https://tinsane.github.io/dumps/dump" + a + ".html")
 }
+</SCRIPT>
 
-/* Change background color of links on hover */
-ul.tab li a:hover {
-    background-color: #ddd;
-}
 
-/* Create an active/current tablink class */
-ul.tab li a:focus, .active {
-    background-color: #ccc;
-}
-
-/* Style the tab content */
-.tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
-}
-</style>
+</head>
 <body>
 
-<p>Дампы пакетов с разборами:</p>
-
-<ul class="tab">
-  <li><a href="javascript:void(0)" class="tablinks" onclick="openElementTab(event, 'Dump1')">Дамп</a></li>
-  <li><a href="javascript:void(0)" class="tablinks" onclick="openElementTab(event, 'Content1')">Разбор</a></li>
-</ul>
-
-<ul class="tab">
-  <li><a href="javascript:void(0)" class="tablinks" onclick="openElementTab(event, 'Dump2')">Дамп</a></li>
-  <li><a href="javascript:void(0)" class="tablinks" onclick="openElementTab(event, 'Content2')">Разбор</a></li>
-</ul>
-
-<ul class="tab">
-  <li><a href="javascript:void(0)" class="tablinks" onclick="openElementTab(event, 'Dump3')">Дамп</a></li>
-  <li><a href="javascript:void(0)" class="tablinks" onclick="openElementTab(event, 'Content3')">Разбор</a></li>
-</ul>
-
-<ul class="tab">
-  <li><a href="javascript:void(0)" class="tablinks" onclick="openElementTab(event, 'Dump4')">Дамп</a></li>
-  <li><a href="javascript:void(0)" class="tablinks" onclick="openElementTab(event, 'Content4')">Разбор</a></li>
-</ul>
-
-<ul class="tab">
-  <li><a href="javascript:void(0)" class="tablinks" onclick="openElementTab(event, 'Dump5')">Дамп</a></li>
-  <li><a href="javascript:void(0)" class="tablinks" onclick="openElementTab(event, 'Content5')">Разбор</a></li>
-</ul>
-
-<ul class="tab">
-  <li><a href="javascript:void(0)" class="tablinks" onclick="openElementTab(event, 'Dump6')">Дамп</a></li>
-  <li><a href="javascript:void(0)" class="tablinks" onclick="openElementTab(event, 'Content6')">Разбор</a></li>
-</ul>
-
-<ul class="tab">
-  <li><a href="javascript:void(0)" class="tablinks" onclick="openElementTab(event, 'Dump7')">Дамп</a></li>
-  <li><a href="javascript:void(0)" class="tablinks" onclick="openElementTab(event, 'Content7')">Разбор</a></li>
-</ul>
-
-<ul class="tab">
-  <li><a href="javascript:void(0)" class="tablinks" onclick="openElementTab(event, 'Dump8')">Дамп</a></li>
-  <li><a href="javascript:void(0)" class="tablinks" onclick="openElementTab(event, 'Content8')">Разбор</a></li>
-</ul>
 
 
 
+<CENTER>
+<FORM NAME="myForm">
+<INPUT TYPE="button" NAME="myButton" VALUE="Случайный пакет"
+onClick="rand_link()">
+</FORM>
+</CENTER>
 
-<script>
-function openElementTab(evt, elementName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(elementName).style.display = "block";
-    evt.currentTarget.className += " active";
-}
-</script>
-     
 </body>
-</html> 
-
+</html>
 
