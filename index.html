@@ -68,6 +68,29 @@ ul.tab li a:focus, .active {
   <li><a href="javascript:void(0)" class="tablinks" onclick="openElementTab(event, 'Content4')">Разбор</a></li>
 </ul>
 
+<ul class="tab">
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openElementTab(event, 'Dump5')">Дамп</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openElementTab(event, 'Content5')">Разбор</a></li>
+</ul>
+
+<ul class="tab">
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openElementTab(event, 'Dump6')">Дамп</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openElementTab(event, 'Content6')">Разбор</a></li>
+</ul>
+
+<ul class="tab">
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openElementTab(event, 'Dump7')">Дамп</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openElementTab(event, 'Content7')">Разбор</a></li>
+</ul>
+
+<ul class="tab">
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openElementTab(event, 'Dump8')">Дамп</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openElementTab(event, 'Content8')">Разбор</a></li>
+</ul>
+
+
+
+
 <div id="Dump1" class="tabcontent">
 <p><samp><pre>0000  20 1a 06 92 a8 eb 0e 5d 4e 97 f6 a0 08 00 45 c0    
 0010  00 6a f0 db 00 00 40 01 ed 7f c0 a8 0d 01 c0 a8   
@@ -108,6 +131,35 @@ ul.tab li a:focus, .active {
 0070  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   
 0080  00 00 00 00 00 00                                 </pre></samp></p>
 </div>
+
+<div id="Dump5" class="tabcontent">
+<p><samp><pre>0000  0e 5d 4e 97 f6 a0 20 1a 06 92 a8 eb 08 06 00 01   
+0010  08 00 06 04 00 02 20 1a 06 92 a8 eb c0 a8 0d 26   
+0020  0e 5d 4e 97 f6 a0 c0 a8 0d 01                     </pre></samp></p>
+</div>
+
+<div id="Dump6" class="tabcontent">
+<p><samp><pre>0000  20 1a 06 92 a8 eb 0e 5d 4e 97 f6 a0 08 06 00 01   
+0010  08 00 06 04 00 01 0e 5d 4e 97 f6 a0 c0 a8 0d 01   
+0020  00 00 00 00 00 00 c0 a8 0d 26 00 00 00 00 00 00   
+0030  00 00 00 00 00 00 00 00 00 00 00 00               </pre></samp></p>
+</div>
+
+<div id="Dump7" class="tabcontent">
+<p><samp><pre>0000  ff ff ff ff ff ff 0e 5d 4e 97 f6 a0 08 06 00 01   
+0010  08 00 06 04 00 01 0e 5d 4e 97 f6 a0 c0 a8 0d 01   
+0020  00 00 00 00 00 00 c0 a8 0d 22 00 00 00 00 00 00   
+0030  00 00 00 00 00 00 00 00 00 00 00 00               </pre></samp></p>
+</div>
+
+<div id="Dump8" class="tabcontent">
+<p><samp><pre>0000  0e 5d 4e 97 f6 a0 20 1a 06 92 a8 eb 08 06 00 01   
+0010  08 00 06 04 00 02 20 1a 06 92 a8 eb c0 a8 0d 26   
+0020  0e 5d 4e 97 f6 a0 c0 a8 0d 01                     </pre></samp></p>
+</div>
+
+
+
 
 
 <div id="Content1" class="tabcontent">
@@ -426,6 +478,185 @@ Internet Control Message Protocol
 </pre>
 	</p> 
 </div>
+
+<div id="Content5" class="tabcontent">
+	<p>
+	<pre>Frame 406: 42 bytes on wire (336 bits), 42 bytes captured (336 bits) on interface 0
+    Interface id: 0 (\Device\NPF_{8E52706C-F47D-4483-BE6F-AEC795E06A6D})
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Jan 14, 2017 09:19:56.972127000 Западная Азия (зима)
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1484367596.972127000 seconds
+    [Time delta from previous captured frame: 0.000060000 seconds]
+    [Time delta from previous displayed frame: 0.000060000 seconds]
+    [Time since reference or first frame: 138.738901000 seconds]
+    Frame Number: 406
+    Frame Length: 42 bytes (336 bits)
+    Capture Length: 42 bytes (336 bits)
+    [Frame is marked: True]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:arp]
+    [Coloring Rule Name: ARP]
+    [Coloring Rule String: arp]
+Ethernet II, Src: CompalIn_92:a8:eb (20:1a:06:92:a8:eb), Dst: 0e:5d:4e:97:f6:a0 (0e:5d:4e:97:f6:a0)
+    Destination: 0e:5d:4e:97:f6:a0 (0e:5d:4e:97:f6:a0)
+        Address: 0e:5d:4e:97:f6:a0 (0e:5d:4e:97:f6:a0)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: CompalIn_92:a8:eb (20:1a:06:92:a8:eb)
+        Address: CompalIn_92:a8:eb (20:1a:06:92:a8:eb)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: ARP (0x0806)
+Address Resolution Protocol (reply)
+    Hardware type: Ethernet (1)
+    Protocol type: IP (0x0800)
+    Hardware size: 6
+    Protocol size: 4
+    Opcode: reply (2)
+    Sender MAC address: CompalIn_92:a8:eb (20:1a:06:92:a8:eb)
+    Sender IP address: 192.168.13.38 (192.168.13.38)
+    Target MAC address: 0e:5d:4e:97:f6:a0 (0e:5d:4e:97:f6:a0)
+    Target IP address: 192.168.13.1 (192.168.13.1)
+
+
+</pre>
+	</p> 
+</div>
+
+<div id="Content6" class="tabcontent">
+	<p>
+	<pre>Frame 71323: 60 bytes on wire (480 bits), 60 bytes captured (480 bits) on interface 0
+    Interface id: 0 (\Device\NPF_{8E52706C-F47D-4483-BE6F-AEC795E06A6D})
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Jan 14, 2017 10:18:23.413473000 Западная Азия (зима)
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1484371103.413473000 seconds
+    [Time delta from previous captured frame: 0.040365000 seconds]
+    [Time delta from previous displayed frame: 34.634806000 seconds]
+    [Time since reference or first frame: 3645.180247000 seconds]
+    Frame Number: 71323
+    Frame Length: 60 bytes (480 bits)
+    Capture Length: 60 bytes (480 bits)
+    [Frame is marked: True]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:arp]
+    [Coloring Rule Name: ARP]
+    [Coloring Rule String: arp]
+Ethernet II, Src: 0e:5d:4e:97:f6:a0 (0e:5d:4e:97:f6:a0), Dst: CompalIn_92:a8:eb (20:1a:06:92:a8:eb)
+    Destination: CompalIn_92:a8:eb (20:1a:06:92:a8:eb)
+        Address: CompalIn_92:a8:eb (20:1a:06:92:a8:eb)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 0e:5d:4e:97:f6:a0 (0e:5d:4e:97:f6:a0)
+        Address: 0e:5d:4e:97:f6:a0 (0e:5d:4e:97:f6:a0)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: ARP (0x0806)
+    Padding: 000000000000000000000000000000000000
+Address Resolution Protocol (request)
+    Hardware type: Ethernet (1)
+    Protocol type: IP (0x0800)
+    Hardware size: 6
+    Protocol size: 4
+    Opcode: request (1)
+    Sender MAC address: 0e:5d:4e:97:f6:a0 (0e:5d:4e:97:f6:a0)
+    Sender IP address: 192.168.13.1 (192.168.13.1)
+    Target MAC address: 00:00:00_00:00:00 (00:00:00:00:00:00)
+    Target IP address: 192.168.13.38 (192.168.13.38)
+</pre>
+	</p> 
+</div>
+
+<div id="Content7" class="tabcontent">
+	<p>
+	<pre>Frame 83922: 60 bytes on wire (480 bits), 60 bytes captured (480 bits) on interface 0
+    Interface id: 0 (\Device\NPF_{8E52706C-F47D-4483-BE6F-AEC795E06A6D})
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Jan 14, 2017 10:51:42.266956000 Западная Азия (зима)
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1484373102.266956000 seconds
+    [Time delta from previous captured frame: 1.000024000 seconds]
+    [Time delta from previous displayed frame: 1.000024000 seconds]
+    [Time since reference or first frame: 5644.033730000 seconds]
+    Frame Number: 83922
+    Frame Length: 60 bytes (480 bits)
+    Capture Length: 60 bytes (480 bits)
+    [Frame is marked: True]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:arp]
+    [Coloring Rule Name: ARP]
+    [Coloring Rule String: arp]
+Ethernet II, Src: 0e:5d:4e:97:f6:a0 (0e:5d:4e:97:f6:a0), Dst: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination: Broadcast (ff:ff:ff:ff:ff:ff)
+        Address: Broadcast (ff:ff:ff:ff:ff:ff)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...1 .... .... .... .... = IG bit: Group address (multicast/broadcast)
+    Source: 0e:5d:4e:97:f6:a0 (0e:5d:4e:97:f6:a0)
+        Address: 0e:5d:4e:97:f6:a0 (0e:5d:4e:97:f6:a0)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: ARP (0x0806)
+    Padding: 000000000000000000000000000000000000
+Address Resolution Protocol (request)
+    Hardware type: Ethernet (1)
+    Protocol type: IP (0x0800)
+    Hardware size: 6
+    Protocol size: 4
+    Opcode: request (1)
+    Sender MAC address: 0e:5d:4e:97:f6:a0 (0e:5d:4e:97:f6:a0)
+    Sender IP address: 192.168.13.1 (192.168.13.1)
+    Target MAC address: 00:00:00_00:00:00 (00:00:00:00:00:00)
+    Target IP address: 192.168.13.34 (192.168.13.34)
+</pre>
+	</p> 
+</div>
+
+<div id="Content8" class="tabcontent">
+	<p>
+	<pre>Frame 44928: 42 bytes on wire (336 bits), 42 bytes captured (336 bits) on interface 0
+    Interface id: 0 (\Device\NPF_{8E52706C-F47D-4483-BE6F-AEC795E06A6D})
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Jan 14, 2017 09:54:26.024870000 Западная Азия (зима)
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1484369666.024870000 seconds
+    [Time delta from previous captured frame: 0.000062000 seconds]
+    [Time delta from previous displayed frame: 0.000062000 seconds]
+    [Time since reference or first frame: 2207.791644000 seconds]
+    Frame Number: 44928
+    Frame Length: 42 bytes (336 bits)
+    Capture Length: 42 bytes (336 bits)
+    [Frame is marked: True]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:arp]
+    [Coloring Rule Name: ARP]
+    [Coloring Rule String: arp]
+Ethernet II, Src: CompalIn_92:a8:eb (20:1a:06:92:a8:eb), Dst: 0e:5d:4e:97:f6:a0 (0e:5d:4e:97:f6:a0)
+    Destination: 0e:5d:4e:97:f6:a0 (0e:5d:4e:97:f6:a0)
+        Address: 0e:5d:4e:97:f6:a0 (0e:5d:4e:97:f6:a0)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: CompalIn_92:a8:eb (20:1a:06:92:a8:eb)
+        Address: CompalIn_92:a8:eb (20:1a:06:92:a8:eb)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: ARP (0x0806)
+Address Resolution Protocol (reply)
+    Hardware type: Ethernet (1)
+    Protocol type: IP (0x0800)
+    Hardware size: 6
+    Protocol size: 4
+    Opcode: reply (2)
+    Sender MAC address: CompalIn_92:a8:eb (20:1a:06:92:a8:eb)
+    Sender IP address: 192.168.13.38 (192.168.13.38)
+    Target MAC address: 0e:5d:4e:97:f6:a0 (0e:5d:4e:97:f6:a0)
+    Target IP address: 192.168.13.1 (192.168.13.1)
+</pre>
+	</p> 
+</div>
+
+
+
 
 <script>
 function openElementTab(evt, elementName) {
