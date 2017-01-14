@@ -49,22 +49,32 @@ ul.tab li a:focus, .active {
 <p>Click on the links inside the tabbed menu:</p>
 
 <ul class="tab">
-  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'London')">London</a></li>
-  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Paris')">Paris</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openElementTab(event, 'Dump1')">Дамп</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openElementTab(event, 'Content1')">Разбор</a></li>
 </ul>
 
-<div id="London" class="tabcontent">
-  <h3>London</h3>
-  <p>London is the capital city of England.</p>
+<div id="Dump1" class="tabcontent">
+  <h3>Дамп</h3>
+  	<p><samp>
+		0000   20 1a 06 92 a8 eb 0e 5d 4e 97 f6 a0 08 00 45 c0 <br>
+		0010   00 78 f0 d7 00 00 40 01 ed 75 c0 a8 0d 01 c0 a8 <br>
+		0020   0d 26 0b 00 f4 ff 00 00 00 00 45 00 00 5c 13 49 <br>
+		0030   00 00 01 01 db 42 c0 a8 0d 26 57 f0 a5 57 08 00 <br>
+		0040   f7 9e 00 01 00 60 00 00 00 00 00 00 00 00 00 00 <br>
+		0050   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 <br>
+		0060   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 <br>
+		0070   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 <br>
+		0080   00 00 00 00 00 00 <br>
+	</samp></p>
 </div>
 
-<div id="Paris" class="tabcontent">
-  <h3>Paris</h3>
-  <p>Paris is the capital of France.</p> 
+<div id="Content1" class="tabcontent">
+  <h3>Разбор</h3>
+  <p>Топ кек</p> 
 </div>
 
 <script>
-function openCity(evt, cityName) {
+function openElementTab(evt, cityName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
@@ -83,16 +93,3 @@ function openCity(evt, cityName) {
 </html> 
 
 
-
-<details>
-	<summary>Dump1</summary>
-	<p><samp>0000   20 1a 06 92 a8 eb 0e 5d 4e 97 f6 a0 08 00 45 c0 <br>
-	0010   00 78 f0 d7 00 00 40 01 ed 75 c0 a8 0d 01 c0 a8 <br>
-	0020   0d 26 0b 00 f4 ff 00 00 00 00 45 00 00 5c 13 49 <br>
-	0030   00 00 01 01 db 42 c0 a8 0d 26 57 f0 a5 57 08 00 <br>
-	0040   f7 9e 00 01 00 60 00 00 00 00 00 00 00 00 00 00 <br>
-	0050   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 <br>
-	0060   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 <br>
-	0070   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 <br>
-	0080   00 00 00 00 00 00 <br></samp></p>
-</details>
