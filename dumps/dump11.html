@@ -1,0 +1,232 @@
+﻿<!DOCTYPE html>
+<html>
+<style>
+body {font-family: "Lato", sans-serif;}
+
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Float the list items side by side */
+ul.tab li {float: left;}
+
+/* Style the links inside the list items */
+ul.tab li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+</style>
+<body>
+
+<ul class="tab">
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openElementTab(event, 'Dump1')">Дамп</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openElementTab(event, 'Content1')">Разбор</a></li>
+</ul>
+
+
+<div id="Dump1" class="tabcontent">
+<p><samp><pre>0000  ff ff ff ff ff ff 34 23 87 e6 ef a5 08 00 45 00
+0010  01 51 1c c3 00 00 80 11 1c da 00 00 00 00 ff ff
+0020  ff ff 00 44 00 43 01 3d 54 96 01 01 06 00 f1 97
+0030  5c 9d 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+0040  00 00 00 00 00 00 34 23 87 e6 ef a5 00 00 00 00
+0050  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+0060  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+0070  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+0080  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+0090  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00a0  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00b0  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00c0  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00d0  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00e0  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00f0  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+0100  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+0110  00 00 00 00 00 00 63 82 53 63 35 01 03 3d 07 01
+0120  34 23 87 e6 ef a5 32 04 c0 a8 0d 21 0c 09 4c 65
+0130  6e 6f 76 6f 2d 50 43 51 0c 00 00 00 4c 65 6e 6f
+0140  76 6f 2d 50 43 3c 08 4d 53 46 54 20 35 2e 30 37
+0150  0d 01 03 06 0f 1f 21 2b 2c 2e 2f 79 f9 fc ff
+</pre></samp></p>
+</div>
+
+
+
+
+<div id="Content1" class="tabcontent">
+	<p>
+	<pre>Frame 12357: 351 bytes on wire (2808 bits), 351 bytes captured (2808 bits) on interface 0
+    Interface id: 0 (\Device\NPF_{8E52706C-F47D-4483-BE6F-AEC795E06A6D})
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Jan 14, 2017 09:28:13.592844000 Западная Азия (зима)
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1484368093.592844000 seconds
+    [Time delta from previous captured frame: 0.009121000 seconds]
+    [Time delta from previous displayed frame: 1.477317000 seconds]
+    [Time since reference or first frame: 635.359618000 seconds]
+    Frame Number: 12357
+    Frame Length: 351 bytes (2808 bits)
+    Capture Length: 351 bytes (2808 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:udp:bootp]
+    [Coloring Rule Name: UDP]
+    [Coloring Rule String: udp]
+Ethernet II, Src: HonHaiPr_e6:ef:a5 (34:23:87:e6:ef:a5), Dst: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination: Broadcast (ff:ff:ff:ff:ff:ff)
+        Address: Broadcast (ff:ff:ff:ff:ff:ff)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...1 .... .... .... .... = IG bit: Group address (multicast/broadcast)
+    Source: HonHaiPr_e6:ef:a5 (34:23:87:e6:ef:a5)
+        Address: HonHaiPr_e6:ef:a5 (34:23:87:e6:ef:a5)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IP (0x0800)
+Internet Protocol Version 4, Src: 0.0.0.0 (0.0.0.0), Dst: 255.255.255.255 (255.255.255.255)
+    Version: 4
+    Header Length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00: Not-ECT (Not ECN-Capable Transport))
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..00 = Explicit Congestion Notification: Not-ECT (Not ECN-Capable Transport) (0x00)
+    Total Length: 337
+    Identification: 0x1cc3 (7363)
+    Flags: 0x00
+        0... .... = Reserved bit: Not set
+        .0.. .... = Don't fragment: Not set
+        ..0. .... = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 128
+    Protocol: UDP (17)
+    Header checksum: 0x1cda [validation disabled]
+        [Good: False]
+        [Bad: False]
+    Source: 0.0.0.0 (0.0.0.0)
+    Destination: 255.255.255.255 (255.255.255.255)
+    [Source GeoIP: Unknown]
+    [Destination GeoIP: Unknown]
+User Datagram Protocol, Src Port: 68 (68), Dst Port: 67 (67)
+    Source Port: 68 (68)
+    Destination Port: 67 (67)
+    Length: 317
+    Checksum: 0x5496 [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+    [Stream index: 75]
+Bootstrap Protocol (Request)
+    Message type: Boot Request (1)
+    Hardware type: Ethernet (0x01)
+    Hardware address length: 6
+    Hops: 0
+    Transaction ID: 0xf1975c9d
+    Seconds elapsed: 0
+    Bootp flags: 0x0000 (Unicast)
+        0... .... .... .... = Broadcast flag: Unicast
+        .000 0000 0000 0000 = Reserved flags: 0x0000
+    Client IP address: 0.0.0.0 (0.0.0.0)
+    Your (client) IP address: 0.0.0.0 (0.0.0.0)
+    Next server IP address: 0.0.0.0 (0.0.0.0)
+    Relay agent IP address: 0.0.0.0 (0.0.0.0)
+    Client MAC address: HonHaiPr_e6:ef:a5 (34:23:87:e6:ef:a5)
+    Client hardware address padding: 00000000000000000000
+    Server host name not given
+    Boot file name not given
+    Magic cookie: DHCP
+    Option: (53) DHCP Message Type (Request)
+        Length: 1
+        DHCP: Request (3)
+    Option: (61) Client identifier
+        Length: 7
+        Hardware type: Ethernet (0x01)
+        Client MAC address: HonHaiPr_e6:ef:a5 (34:23:87:e6:ef:a5)
+    Option: (50) Requested IP Address
+        Length: 4
+        Requested IP Address: 192.168.13.33 (192.168.13.33)
+    Option: (12) Host Name
+        Length: 9
+        Host Name: Lenovo-PC
+    Option: (81) Client Fully Qualified Domain Name
+        Length: 12
+        Flags: 0x00
+        0000 .... = Reserved flags: 0x00
+        .... 0... = Server DDNS: Some server updates
+        .... .0.. = Encoding: ASCII encoding
+        .... ..0. = Server overrides: No override
+        .... ...0 = Server: Client
+        A-RR result: 0
+        PTR-RR result: 0
+        Client name: Lenovo-PC
+    Option: (60) Vendor class identifier
+        Length: 8
+        Vendor class identifier: MSFT 5.0
+    Option: (55) Parameter Request List
+        Length: 13
+        Parameter Request List Item: (1) Subnet Mask
+        Parameter Request List Item: (3) Router
+        Parameter Request List Item: (6) Domain Name Server
+        Parameter Request List Item: (15) Domain Name
+        Parameter Request List Item: (31) Perform Router Discover
+        Parameter Request List Item: (33) Static Route
+        Parameter Request List Item: (43) Vendor-Specific Information
+        Parameter Request List Item: (44) NetBIOS over TCP/IP Name Server
+        Parameter Request List Item: (46) NetBIOS over TCP/IP Node Type
+        Parameter Request List Item: (47) NetBIOS over TCP/IP Scope
+        Parameter Request List Item: (121) Classless Static Route
+        Parameter Request List Item: (249) Private/Classless Static Route (Microsoft)
+        Parameter Request List Item: (252) Private/Proxy autodiscovery
+    Option: (255) End
+        Option End: 255
+
+
+</pre>
+	</p> 
+</div>
+
+
+<script>
+function openElementTab(evt, elementName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(elementName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+     
+</body>
+</html> 
+
+
