@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html>
+<style>
+body {font-family: "Lato", sans-serif;}
+
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Float the list items side by side */
+ul.tab li {float: left;}
+
+/* Style the links inside the list items */
+ul.tab li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+</style>
+<body>
+
+<ul class="tab">
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openElementTab(event, 'Dump1')">Дамп</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openElementTab(event, 'Content1')">Разбор</a></li>
+</ul>
+
+
+<div id="Dump1" class="tabcontent">
+<p><samp><pre>0000  0e 5d 4e 97 f6 a0 20 1a 06 92 a8 eb 08 06 00 01   
+0010  08 00 06 04 00 02 20 1a 06 92 a8 eb c0 a8 0d 26   
+0020  0e 5d 4e 97 f6 a0 c0 a8 0d 01                     </pre></samp></p>
+</div>
+
+
+
+<div id="Content1" class="tabcontent">
+	<p>
+	<pre>Frame 406: 42 bytes on wire (336 bits), 42 bytes captured (336 bits) on interface 0
+    Interface id: 0 (\Device\NPF_{8E52706C-F47D-4483-BE6F-AEC795E06A6D})
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Jan 14, 2017 09:19:56.972127000 Западная Азия (зима)
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1484367596.972127000 seconds
+    [Time delta from previous captured frame: 0.000060000 seconds]
+    [Time delta from previous displayed frame: 0.000060000 seconds]
+    [Time since reference or first frame: 138.738901000 seconds]
+    Frame Number: 406
+    Frame Length: 42 bytes (336 bits)
+    Capture Length: 42 bytes (336 bits)
+    [Frame is marked: True]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:arp]
+    [Coloring Rule Name: ARP]
+    [Coloring Rule String: arp]
+Ethernet II, Src: CompalIn_92:a8:eb (20:1a:06:92:a8:eb), Dst: 0e:5d:4e:97:f6:a0 (0e:5d:4e:97:f6:a0)
+    Destination: 0e:5d:4e:97:f6:a0 (0e:5d:4e:97:f6:a0)
+        Address: 0e:5d:4e:97:f6:a0 (0e:5d:4e:97:f6:a0)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: CompalIn_92:a8:eb (20:1a:06:92:a8:eb)
+        Address: CompalIn_92:a8:eb (20:1a:06:92:a8:eb)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: ARP (0x0806)
+Address Resolution Protocol (reply)
+    Hardware type: Ethernet (1)
+    Protocol type: IP (0x0800)
+    Hardware size: 6
+    Protocol size: 4
+    Opcode: reply (2)
+    Sender MAC address: CompalIn_92:a8:eb (20:1a:06:92:a8:eb)
+    Sender IP address: 192.168.13.38 (192.168.13.38)
+    Target MAC address: 0e:5d:4e:97:f6:a0 (0e:5d:4e:97:f6:a0)
+    Target IP address: 192.168.13.1 (192.168.13.1)
+
+
+</pre>
+	</p> 
+</div>
+
+<script>
+function openElementTab(evt, elementName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(elementName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+     
+</body>
+</html> 
+
+
